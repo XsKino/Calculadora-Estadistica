@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Calculadora estadística</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Montserrat font -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Calculadora estadística</h1>
+        <label id="data-label" for="grupo-datos">
+          <p id="data-label-text" class="pre-hidden">Datos no agrupados</p>
+          <input
+            name="data"
+            type="text"
+            id="data"
+            autocomplete="off"
+            placeholder="Datos no agrupados"
+          />
+        </label>
+        <div id="button-container">
+          <a href="#media"><button id="media-button" class="button">Media aritmética</button></a>
+          <a href="#varianza"><button id="varianza-button" class="button">Varianza</button></a>
+          <a href="#desest"><button id="desest-button" class="button">Desviación Estándar</button></a>
+          <a href="#covar"><button id="covar-button" class="button">Coeficiente de variación</button></a>
+        </div>
+        <div id="respuestas-container-scrollbar">
+          <section id="respuestas"></section>   
+        </div>
+      
+    </div>
+    <button id="clear-button">Limpiar</button>
+  </body>
+  <script src="index.js"></script>
+</html>
